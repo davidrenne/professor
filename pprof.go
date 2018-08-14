@@ -43,6 +43,6 @@ func ListenAndServe(addr string) error {
 // Launch a standard pprof server at addr.
 func Launch(addr string) {
 	go func() {
-		log.Fatal(ListenAndServe(addr))
+		log.Println(ListenAndServe(addr))
 	}()
 }
